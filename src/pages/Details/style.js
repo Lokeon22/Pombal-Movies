@@ -27,15 +27,8 @@ export const Content = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
+  margin: 50px 0;
   padding: 32px;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  border-radius: 10px;
-
-  &:hover {
-    transition: 0.5s;
-    box-shadow: 3px 3px 10px -3px ${({ theme }) => theme.COLORS.PINK};
-  }
 `;
 
 export const Tags = styled.div`

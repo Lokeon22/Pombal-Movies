@@ -34,7 +34,7 @@ export function New() {
   function deleteTags(deleted) {
     const confirm = window.confirm("Deseja excluir?");
     if (confirm) {
-      setTags((prevState) => prevState.filter((link) => link !== deleted));
+      setName((prevState) => prevState.filter((link) => link !== deleted));
     } else {
       return;
     }

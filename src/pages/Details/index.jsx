@@ -21,7 +21,6 @@ export function Details() {
     async function fetchNotes() {
       const response = await api.get(`/notes?title=${search}`);
       setNotes(response.data);
-      console.log(response.data);
     }
 
     fetchNotes();
@@ -52,17 +51,8 @@ export function Details() {
 
         <Content>
           {notes.map((note, index) => (
-            <Note key={index} data={{ note }} />
+            <Note key={index} data={note} />
           ))}
-        </Content>
-
-        <Content>
-          <Note
-            data={{
-              title: "The Witcher",
-              description: "Text",
-            }}
-          />
         </Content>
       </main>
     </Container>
