@@ -48,6 +48,7 @@ export const Label = styled(Link)`
     }
 
     p {
+      width: 135px;
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }

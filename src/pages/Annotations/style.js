@@ -22,6 +22,15 @@ export const Content = styled.div`
     margin-top: 40px;
     text-align: justify;
   }
+
+  button {
+    width: 200px;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    color: ${({ theme }) => theme.COLORS.PINK};
+    margin-top: 48px;
+    font-size: 0.9rem;
+    border: 1px dashed ${({ theme }) => theme.COLORS.PINK};
+  }
 `;
 
 export const Form = styled.form`
@@ -45,4 +54,15 @@ export const Tags = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+
+  > span {
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  }
+`;
+
+export const SectionStar = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 22px;
 `;

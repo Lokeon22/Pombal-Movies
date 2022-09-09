@@ -1,5 +1,4 @@
 import { Container } from "./style";
-import { AiOutlineStar } from "react-icons/ai";
 import { Tag } from "../Tag";
 
 export function Note({ data, ...rest }) {

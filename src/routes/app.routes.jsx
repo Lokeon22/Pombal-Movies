@@ -10,7 +10,7 @@ export function AppRoutes() {
     <Routes>
       <Route path="/profile" element={<Profile />} />
       <Route path="/" element={<Details />} />
-      <Route path="/annotations" element={<Annotations />} />
+      <Route path="/annotations/:id" element={<Annotations />} />
       <Route path="/new" element={<New />} />
     </Routes>
   );

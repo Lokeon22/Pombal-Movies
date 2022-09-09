@@ -1,7 +1,7 @@
 import { Container, Content } from "./style";
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
-
+import { NoNotes } from "../../components/NoNotes";
 import { Note } from "../../components/Note";
 import { Input } from "../../components/Input";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -30,6 +30,10 @@ export function Details() {
     navigate("/new");
   }
 
+  function handleNavigateDetails(id) {
+    navigate(`/annotations/${id}`);
+  }
+
   return (
     <Container>
       <Header />
@@ -50,9 +54,17 @@ export function Details() {
         </label>
 
         <Content>
-          {notes.map((note, index) => (
-            <Note key={index} data={note} />
-          ))}
+          {notes.length > 0 ? (
+            notes.map((note) => (
+              <Note
+                key={note.id}
+                data={note}
+                onClick={() => handleNavigateDetails(note.id)}
+              />
+            ))
+          ) : (
+            <NoNotes />
+          )}
         </Content>
       </main>
     </Container>
