@@ -3,6 +3,7 @@ import { Container, Grid, Background } from "./style";
 import { useState } from "react";
 
 import { AiOutlineMail, AiFillLock } from "react-icons/ai";
+import { Social } from "../../components/Social";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
@@ -40,8 +41,8 @@ export function Login() {
           />
           <Button title="Entrar" onClick={handleLoginPombal} />
           <ButtonText title="Criar conta" to="/register" />
+          <Social />
         </form>
-
         <Background />
       </Grid>
     </Container>

@@ -8,6 +8,7 @@ import { AiOutlineMail, AiFillLock, AiOutlineUser } from "react-icons/ai";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
+import { Social } from "../../components/Social";
 
 export function Register() {
   const [name, setName] = useState("");
@@ -42,7 +43,6 @@ export function Register() {
         <form>
           <h1>PombalMovies</h1>
           <p>Aplicação para acompanhar tudo que assistir</p>
-
           <h2>Crie sua conta</h2>
           <Input
             type="text"
@@ -50,14 +50,12 @@ export function Register() {
             icon={AiOutlineUser}
             onChange={(e) => setName(e.target.value)}
           />
-
           <Input
             type="text"
             placeholder="E-mail"
             icon={AiOutlineMail}
             onChange={(e) => setEmail(e.target.value)}
           />
-
           <Input
             type="password"
             placeholder="Senha"
@@ -66,6 +64,7 @@ export function Register() {
           />
           <Button title="Cadastrar" onClick={handleSingUp} />
           <ButtonText title="Volte para o login" to="/" />
+          <Social />
         </form>
 
         <Background />
