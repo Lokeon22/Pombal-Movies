@@ -1,6 +1,6 @@
 import { Container } from "./style";
 
-import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { HiOutlineNewspaper } from "react-icons/hi";
 
@@ -20,8 +20,8 @@ export function Social() {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com" target="_blank">
-            <AiOutlineTwitter />
+          <a href="https://github.com/Lokeon22" target="_blank">
+            <AiOutlineGithub />
           </a>
         </li>
         <li>
