@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import BackgroundImg from "../../assets/projetoteste.png";
+import BackgroundImg from "../../assets/pombalmovies.jpg";
 
 export const Container = styled.section`
   width: 100%;

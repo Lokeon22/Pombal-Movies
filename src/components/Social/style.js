@@ -5,7 +5,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   text-align: center;
 
   ul {
@@ -27,10 +27,10 @@ export const Container = styled.section`
     position: relative;
     display: flex;
     gap: 10px;
-    padding-top: 30px;
+    padding-top: 15px;
 
     p {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       text-align: start;
     }
 
@@ -40,7 +40,7 @@ export const Container = styled.section`
 
     span {
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       border-left: 1px solid white;
     }
   }
