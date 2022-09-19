@@ -12,6 +12,15 @@ export const Grid = styled.div`
   height: 100vh;
   grid-template-columns: 650px 1fr;
 
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    section {
+      display: none;
+    }
+  }
+
   > form {
     max-width: 350px;
     display: flex;

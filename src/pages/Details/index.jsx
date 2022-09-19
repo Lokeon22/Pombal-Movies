@@ -38,7 +38,7 @@ export function Details() {
     <Container>
       <Header />
       <main>
-        <label>
+        <label className="formobile">
           <h1>Meus filmes</h1>
           <Input
             type="text"

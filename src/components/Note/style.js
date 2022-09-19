@@ -40,7 +40,10 @@ export const Container = styled.button`
   }
 
   > footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     text-align: initial;
-    margin-top: 12px;
+    margin-top: 10px;
   }
 `;

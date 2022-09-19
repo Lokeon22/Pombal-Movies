@@ -9,6 +9,20 @@ export const Container = styled.div`
     padding-top: 50px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1024px) {
+      .formobile {
+        grid-template-columns: 200px 2fr 1fr;
+        gap: 20px;
+        padding: 0 15px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .formobile {
+        grid-template-columns: 1fr;
+      }
+    }
+
     > label {
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
