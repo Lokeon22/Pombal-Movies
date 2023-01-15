@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://pombalmovies-api.herokuapp.com",
+  baseURL: "https://pombalmovies.onrender.com",
 });
