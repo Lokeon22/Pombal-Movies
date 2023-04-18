@@ -9,6 +9,10 @@ export const Container = styled.div`
     padding-top: 50px;
     margin: 0 auto;
 
+    .formobile {
+      padding: 0px 20px;
+    }
+
     @media screen and (max-width: 1024px) {
       .formobile {
         grid-template-columns: 200px 2fr 1fr;
